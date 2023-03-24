@@ -1,0 +1,156 @@
+body {
+	background-image: url("GhostImages/GhostTile.jpg");
+	background-size: 30%;
+	background-repeat: repeat;
+	background-attachment: fixed;
+}
+
+#menu {
+	width: 60%;
+	margin: 3.3% 0 3% 15%;
+	display: block;
+	text-align: left;
+	padding: 5% 3% 1.2% 3%;
+	background-color: RGB(200, 120, 200);
+	border: 4px solid RGB(125, 40, 125);
+	position: absolute;
+}
+
+#back-to-top {
+	float: right;
+	position: relative;
+	background-color: RGB(200, 120, 200);
+	color: RGB(80, 0, 80);
+	font-size: 3vw;
+	border: 1px solid RGB(125, 40, 125);
+	border-radius: 100%;
+}  
+
+#site-logo {
+	float: right;
+	font-family: cursive;
+	font-size: 3.5vw;
+	margin: 0;
+	margin-right: 1%;
+	color: RGB(80, 0, 80);
+	text-shadow: 2px 2px 3px RGB(80, 0, 80);
+	position: relative;
+	z-index: 5;
+}
+
+.image-boxes {
+	width: 100%;
+	height: 100%;
+	top: 0%;
+	left: 0%;
+	position: absolute;
+	background-image: url("");
+	background-size: cover;
+	opacity: 0;
+}
+
+.link-elements {
+	text-decoration: none;
+	color: RGB(125, 40, 125); 
+	font-size: 2.3vw;
+	text-shadow: 1px 1px 2px RGB(40, 0, 40);
+	margin-bottom: 8%;
+	display: block;
+	width: 20%;
+	position: relative;
+	z-index: 5;
+}
+
+@keyframes fade {
+	from {
+	}
+	to {
+		opacity: 0.3;
+	}
+}
+
+@keyframes emphasize {
+	0% {
+		color: RGB(125, 40, 125);
+		text-shadow: 1px 1px 2px RGB(40, 0, 40);
+	}
+	25% {
+		color: RGB(115, 35, 115)
+		text-shadow: 1px 1px 2px RGB(35, 0, 35);
+	}
+	50% {
+		color: RGB(105, 30, 105);
+		text-shadow: 1px 1px 3px RGB(30, 0, 30);
+	}
+	75% {
+		color: RGB(95, 25, 95);
+		text-shadow: 2px 2px 4px RGB(25, 0, 25);
+	}
+	100% {
+		color: RGB(85, 20, 85);
+		text-shadow: 2px 2px 4px RGB(20, 0, 20);
+	}
+}
+
+@keyframes materialize {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 0.3;      	
+	}
+}
+
+#menu {
+	pointer-events: none;
+}
+
+#menu > .link-elements {
+	pointer-events: auto;
+}
+
+#menu .link-elements:hover {
+	animation-name: emphasize;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+
+#menu:hover > .link-elements:not(:hover) {
+	animation-name: fade;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+
+#link-history:hover + #image-box1 {
+	background-image: url("GhostImages/gengar.png");
+	background-size: cover;
+	animation-name: materialize;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+
+#link-trainers:hover + #image-box2 {
+	background-image: url("GhostImages/drifblim.png");
+	background-size: cover;
+	animation-name: materialize;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+
+#link-comp-team:hover + #image-box3 {
+	background-image: url("GhostImages/ceruledge.png");
+	background-size: cover;
+	animation-name: materialize;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+
+#link-art:hover + #image-box4 {
+	background-image: url("GhostImages/mimikyu.png");
+	background-size: cover;
+	animation-name: materialize;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+
+

@@ -1,0 +1,286 @@
+body {
+	background-image: url("GhostImages/GhostTile.jpg");
+	background-size: 30%;
+	background-repeat: repeat;
+	background-attachment: fixed;
+}
+
+/* Navigation */
+
+#nav-box {
+	width: 12%;
+	margin-left: 1.1%;
+	padding: 2% 0;
+	float: left;
+	background-color: RGB(200, 120, 200);
+	color: RGB(80, 0, 80);
+	box-shadow: 2px 2px 2px RGB(40, 0, 40);
+	font-size: 1.8vw;
+	border: 3px solid RGB(125, 40, 125);
+	border-radius: 10%;
+	text-align: center;
+	position: fixed;
+	display: block;
+}
+
+#nav-box a {
+	text-decoration: none;
+}
+
+#nav-box a:hover {
+	color: RGB(120, 10, 120);
+	text-shadow: 1px 1px 2px black;
+}
+
+.title-links {
+	display: block;
+	margin-top: 18%;
+}
+
+#inner-list {
+	margin-top: 2%;
+}
+
+#inner-list li {
+	list-style-type: none;
+	float: left;
+	font-size: 1.2vw;
+	background-position: left center;
+	background-size: 18%;
+	background-image: url("GhostImages/pokeball.png");
+	background-repeat: no-repeat;
+	padding-left: 15%;
+	margin-left: 15%;
+}
+
+#last-element {
+	margin-bottom: 18%;
+}
+
+#inner-list + a {
+	clear: both;
+}
+
+/* General for content page */
+
+h2, h3, h4 {
+	text-align: center;
+}
+
+.line-divider {
+	margin-top: 5%;
+	width: 100%;
+}
+
+h4 {
+	margin-top: 8%;
+	clear: both;
+}
+
+.content-div {
+	width: 60%;
+	background-color: RGB(200, 120, 200);
+	color: RGB(80, 0, 80);
+	font-size: 2vw;
+	border: 4px solid RGB(125, 40, 125);
+	margin: 3.3% 0 6% 15%;
+	padding: 2% 4%;
+}
+
+/* For History section */
+
+.left-image {
+	width: 20%;
+	float: left;
+	margin-right: 4%;
+}
+
+.right-image {
+	width: 20%;
+	float: right;
+	margin-left: 4%;
+}
+
+/* For Trainers section */
+
+    .trainers-content {
+    	text-align: center;
+    }
+    
+    .trainers-content p {
+    	text-align: left;
+    }
+    
+    .trainer-image {
+    	width: 20%;
+    }
+
+    .outer-team {
+    	display: flex;
+    	flex-direction: column;
+    	align-content: space-between;
+    	background-color: RGB(80, 0, 80);
+    	color: RGB(200, 120, 200);
+    	margin-bottom: 10%;
+    }
+    
+    .single-pokemon {
+    	display: flex;
+    	flex-direction: row;
+    	justify-content: space-between;
+    	align-items: center;
+    	border: 1px solid RGB(125, 40, 125);
+    	height: 20%;
+    }
+    
+    .single-pokemon p:not(.move) {
+    	width: 35%;
+    }
+    
+    .moveset {
+    	display: flex;
+    	flex-direction: column;
+    	text-align: left;
+    	width: 70%;
+    }
+    
+    .move {
+    	margin: 1%;
+    	width: 80%;
+    }
+    
+    .poke-image-div {
+    	width: 30%;
+    }
+    
+    .team-poke-image {
+    	width: 100%;
+    	margin-left: 10%;
+    }
+    
+    .team-poke-name {
+    	margin-left: 10%;
+    }
+    
+
+/* For Competetitive Team Section */
+
+#rank-team {
+	width: 45%;
+	margin-right: 5%;
+	float: left;
+}
+
+.team-member {
+	display: flex;
+	flex-direction: column;
+	align-items: space-between;
+	justify-content: center;
+	text-align: center;
+    	background-color: RGB(80, 0, 80);
+    	color: RGB(200, 120, 200);
+    	border: 1px solid RGB(125, 40, 125);
+    	padding-top: 5%;
+    	margin-bottom: 10%;
+}
+
+.comp-team-image {
+	width: 30%;
+}
+
+.poke-type-image {
+	width: 8%;
+}
+
+.comp-moveset {
+    	display: flex;
+    	flex-direction: column;
+    	align-self: center;
+    	width: 50%;
+    	text-align: left;
+}
+
+.type-image {
+	width: 17%;
+	margin-right: 2%;
+}
+    
+.comp-move {
+	margin: 1%;
+}
+
+.comp-moveset, .team-info {
+    	border: 1px solid RGB(200, 120, 200);
+}
+
+/* For Art Gallery section */
+
+.art-div {
+	display: flex;
+	justify-content: center;
+}
+
+.art-image {
+	width: 60%;
+	text-align: center;
+}
+
+/* For end logo */
+
+  @keyframes logo-fade-in {
+  	from {
+  		opacity: 0;
+  	}
+  	to {
+  		opacity: 1;
+  	}
+  }
+  
+  @keyframes ghost-fade-out {
+  	from {
+  		opacity: 1;
+  		margin-left: 0;
+  	}
+  	to {
+  		opacity: 0;
+  		margin-left: 90%;
+  	}
+  }
+  
+  #logo {
+  	height: 18%;
+  	width: 60%;
+  	position: relative;
+  	color: RGB(200, 30, 200);
+  	border: 3px solid RGB(200, 30, 200);
+  	background-color: RGB(80, 0, 80);
+  }
+  
+  #logo p {
+  	margin: 0;
+    	font-size: 10.5vw; 
+  	font-family: cursive;
+  	text-shadow: 0px 0px 8px RGB(10, 0, 10);
+  	opacity: 0;
+  }
+  
+  #logo:hover p {
+    	animation-name: logo-fade-in;
+    	animation-duration: 6s;
+  	animation-fill-mode: forwards;
+  }
+  
+  #ghost {
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  	height: 100%;
+  }
+  
+  #logo:hover #ghost {
+    	animation-name: ghost-fade-out;
+    	animation-duration: 6s;
+  	animation-fill-mode: forwards;
+  }
+
+
