@@ -147,7 +147,7 @@ h4 {
     
     .move {
     	margin: 1%;
-    	width: 80%;
+    	width: 100%;
     }
     
     .poke-image-div {
@@ -161,6 +161,14 @@ h4 {
     
     .team-poke-name {
     	margin-left: 10%;
+    }
+    
+    .team-poke-type {
+    	width: 45%;
+    }
+    
+    .team-move-type {
+    	width: 18%;
     }
     
 
@@ -283,5 +291,4 @@ h4 {
     	animation-duration: 6s;
   	animation-fill-mode: forwards;
   }
-
 
